@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="agenda.css">
+    </head> 
+    
+    
+    <div class="header">
+    <h3>Ajout d'un évènement à l'agenda</h3>
+    </div>
+    <body>
+
+    <div class="main">
+    
+    Titre de l'évènement <input type="text" id="titre"> <br> <br>
+    Date de l'évènement <input type = "date" id="date"> <br> <br>
+    Heure de l'évènement <input type="time" id="time">  <br> <br>
+
+
+    <label for="categorie-select">Catégorie de l'évènement  </label>
+    <select name="categorie" id="categorie-select">
+        <option value="">Merci de choisir une catégorie</option>
+        <option value="travail">Professionnel</option>
+        <option value="famille">Famille</option>
+        <option value="amis">Amis</option>
+        <option value="medical">Médical</option>
+        <option value="admin">Administratif</option> 
+    </select>
+
+    <br> <br>
+
+    <label for="memo">Pense-bête</label>
+    <input type="text" id="memo">
+   
+   
+   
+   
+   
+   
+   
+    <p> <strong> Souhaitez vous lier cet évènement à une Google Task ? : </strong></p>
+   <div id="answers">
+    <input type="radio" id="Oui" name="evenement" value="Oui">
+    <label for="Oui">Oui</label><br>
+    <input type="radio" id="Non" name="evenement" value="Non">
+    <label for="Non">Non</label>
+
+    </div>
+
+    <br> <br>
+
+    <button type="button" id="ajouter">Ajouter l'évènement à <em>Mon Agenda</em></button>
+
+
+
+    </body>
+    </html>
